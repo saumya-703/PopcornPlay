@@ -1,1 +1,2 @@
-# PopcornPlay
+# 🍿▶️ PopcornPlay
+🍿 PopcornPlay – Grab your popcorn, hit play, and let the binge begin! Whether you're in for a movie marathon, quick laughs, or just background vibes while you doze off — we've got your chill time covered. Sit back, relax, munch away, and enjoy the reel deal!
