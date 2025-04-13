@@ -1,8 +1,8 @@
 .movie-card {
     position: relative;
-    border-radius: 8px;
+    border-radius: 50px;
     overflow: hidden;
-    background-color: #1a1a1a;
+    background-color: #212020;
     transition: transform 0.2s;
     height: 100%;
     display: flex;
@@ -92,13 +92,16 @@
   }
   
   .movie-info h3 {
+    text-align: center;
     font-size: 1rem;
-    margin: 0;
+    margin-top: 10px;
   }
   
   .movie-info p {
+    text-align: center;
     color: #999;
     font-size: 0.9rem;
+    margin-top: 2px;
   }
   
   .user-rating {
