@@ -1,10 +1,11 @@
 .navbar {
-    background-color: #240606f1;
-    padding: 1rem 2rem;
+    background-color: #ff2020f1;
+    padding: 2.5px 2.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(251, 251, 251, 0.797);
+    box-shadow: 0 2px 4px rgba(243, 70, 70, 0.797);
+    backdrop-filter: blur(2px);
   }
   
   .navbar-brand {
