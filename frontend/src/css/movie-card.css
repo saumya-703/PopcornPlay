@@ -1,6 +1,6 @@
 .movie-card {
     position: relative;
-    border-radius: 50px;
+    border-radius: 20px;
     overflow: hidden;
     background-color: #212020;
     transition: transform 0.2s;
@@ -10,6 +10,7 @@
   }
   
   .movie-card:hover {
+    box-shadow: 0 0 120px 4px #ff4757;
     transform: translateY(-5px);
   }
   

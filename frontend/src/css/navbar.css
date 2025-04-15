@@ -1,31 +1,37 @@
 .navbar {
-    background-color: #262626d0;
+    background-color: #240606f1;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(251, 251, 251, 0.797);
   }
   
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
   }
   
   .navbar-links {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   
+  .title a{
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    color: #ffff;
+    text-decoration: none;
+  }
   .nav-link {
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.2s;
   }
   
   .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 0, 0, 0.1);
   }
   
   @media (max-width: 768px) {

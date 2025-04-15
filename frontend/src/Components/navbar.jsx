@@ -6,9 +6,12 @@ function Navbar() {
       <div className="navbar-brand">
         <Link to="/">🍿▶️</Link>
       </div>
+      <div className="title">
+        <Link to="/">Popcorn Play</Link>
+      </div>
       <div className="navbar-links">
-        <Link to="/" className="nav-link">🏡 Home</Link>
-        <Link to="/favorites" className="nav-link">👍🏻 Favorites</Link>
+        <Link to="/" className="nav-link"></Link>
+        <Link to="/favorites" className="nav-link">💖</Link>
       </div>
     </nav>
   );

@@ -1,51 +1,83 @@
+/* favorites.css */
+
 .favorites {
-    padding: 2rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .favorites h2 {
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .favorites-empty {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    margin: 2rem auto;
-    max-width: 600px;
-  }
-  
-  .favorites-empty h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    color: #e50914;
-  }
-  
-  .favorites-empty p {
-    color: #999;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  
-  /* Animation for new favorites being added */
-  @keyframes fadeIn {
-    from {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid; /* Use grid instead of flex */
+  grid-template-columns: repeat(4, 1fr); /* Display 4 cards per row */
+  gap: 2rem; /* Space between cards */
+  justify-items: center; /* Center items in their grid cells */
+}
+
+.favorites h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.554);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.favorites-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #e50914;
+}
+
+.favorites-empty p {
+  color: #999;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Set grid to 4 columns */
+  gap: 2rem;
+  justify-items: center; /* Center items in their grid cells */
+}
+
+/* Animation for new favorites being added */
+@keyframes fadeIn {
+  from {
       opacity: 0;
       transform: translateY(20px);
-    }
-    to {
+  }
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
-  .movies-grid > * {
-    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.movies-grid > * {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 1200px) {
+  .favorites {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row for medium screens */
   }
+}
+
+@media (max-width: 768px) {
+  .favorites {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .favorites {
+      grid-template-columns: 1fr; /* 1 card per row for very small screens */
+  }
+}
